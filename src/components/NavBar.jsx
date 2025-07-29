@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import "./NavBar.css";
+
 
 function NavBar() {
   return (
-    <nav className="navbar">
+    <div className="navbar">
      <NavLink
         to="/"
         className={({ isActive }) => (isActive ? "active" : "")}
@@ -24,7 +24,7 @@ function NavBar() {
       >
         Directors
       </NavLink>
-    </nav>
+    </div>
     );
 };
 
